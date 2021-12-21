@@ -1,0 +1,455 @@
+@font-face {
+  font-family: "DM Serif Display 400";
+  src: url("../fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf");
+}
+@font-face {
+  font-family: "Karla 400";
+  src: url("../fonts/Karla/Karla-Regular.ttf");
+}
+@font-face {
+  font-family: "Karla 700";
+  src: url("../fonts/Karla/Karla-Bold.ttf");
+}
+:root {
+  font-size: 14px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+}
+
+a {
+  font-family: "Karla 700";
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  transition: all 0.5s ease-in-out;
+}
+
+ul {
+  display: block;
+}
+
+li {
+  list-style-type: none;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+hr {
+  display: block;
+  height: 0.05rem;
+  border: none;
+}
+
+h1 {
+  font-family: "DM Serif Display 400";
+  font-weight: 400;
+  font-size: 2.7rem;
+  text-align: center;
+}
+
+h3 {
+  font-family: "DM Serif Display 400";
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-top: 1.8rem;
+  text-align: center;
+}
+
+h4 {
+  font-family: "Karla 700";
+  font-weight: 700;
+  text-align: center;
+}
+
+.white-text {
+  color: #fafafa;
+}
+
+.black-text {
+  color: #2b272f;
+}
+
+.gray-text {
+  color: #837d87;
+}
+
+.text {
+  font-family: "Karla 400";
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-top: 0.9rem;
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+button {
+  font-family: "Karla 400";
+  font-size: 1rem;
+  display: block;
+  padding: 0.5em 2em;
+  margin: 2rem auto 0 auto;
+  background-color: transparent;
+  border: 0.15rem solid #fafafa;
+  transition: all 0.5s ease-in-out;
+}
+button:hover {
+  background-color: #fafafa;
+  color: #2d2640;
+}
+
+.info-img {
+  width: 4.5rem;
+  height: 4.5rem;
+  margin: auto;
+}
+
+.insure-main-section nav .nav-top {
+  padding: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5em;
+}
+.insure-main-section nav .nav-items {
+  position: absolute;
+  z-index: 5;
+  width: 0;
+  height: 0;
+  transform: translateX(-100%);
+  overflow: hidden;
+  font-size: 1.3rem;
+  background-color: #2d2640;
+  background-image: url(../images/bg-pattern-mobile-nav.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  transition: all 0.2s ease-in-out;
+}
+.insure-main-section nav .nav-items .nav-link {
+  padding: 1em 0;
+  margin: 1rem auto;
+  width: 90%;
+  border: 0.15rem solid transparent;
+}
+.insure-main-section nav .nav-items .nav-link:hover {
+  border: 0.15rem solid #fafafa;
+}
+.insure-main-section nav .open-nav-items {
+  width: 100%;
+  height: 90vh;
+  transform: translateX(0%);
+}
+
+.insure-main-section header {
+  position: relative;
+}
+.insure-main-section header hr {
+  display: none;
+}
+.insure-main-section header .intro-mobile-img {
+  height: 67vh;
+}
+.insure-main-section header .intro-mobile-img img {
+  object-position: center;
+}
+.insure-main-section header .summary {
+  padding: 6.5em 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2d2640;
+  background-image: url(../images/bg-pattern-intro-left-mobile.svg);
+  background-position: left top;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+.insure-main-section header .summary h1 {
+  font-size: 3rem;
+  line-height: 1;
+}
+.insure-main-section header .bg-pattern-intro-right {
+  position: absolute;
+  top: 82%;
+  right: 0;
+  width: 40vw;
+  height: 52vh;
+  background-image: url(../images/bg-pattern-intro-right-mobile.svg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.more-info {
+  padding: 2em 1.5em;
+  margin: 8rem auto 0 auto;
+}
+.more-info hr {
+  background-color: #95a9c6;
+  width: 45%;
+  margin: auto;
+}
+.more-info h1 {
+  margin: 2rem 0 4rem 0;
+}
+.more-info .info {
+  margin-top: 3rem;
+}
+
+aside {
+  padding: calc(6.5em - 1.5rem) 3.25em;
+  margin: 8rem 1.5em;
+  background-color: #2d2640;
+  background-image: url(../images/bg-pattern-how-we-work-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right top;
+}
+
+footer {
+  background-color: #fafafa;
+}
+footer .social-icons {
+  padding: 6.5em 0 0 0;
+  background-image: url(../images/bg-pattern-footer-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+footer .social-icons img {
+  width: max-content;
+  margin: auto;
+}
+footer .social-icons .social-icons-group {
+  width: 10rem;
+  margin: 2rem auto;
+  display: flex;
+}
+footer .social-icons .social-icons-group .footer-img:hover {
+  filter: brightness(40%);
+}
+footer hr {
+  width: 90%;
+  margin: auto;
+  background-color: #837d87;
+  opacity: 0.25;
+}
+footer .footer-link-group {
+  padding: 0 0 4.3333333333em 0;
+}
+footer .footer-link-group .about-us {
+  margin: 3.25em 0 0 0;
+}
+footer .footer-link-group .about-us h4 {
+  margin: 0 auto 2.6em auto;
+  width: max-content;
+}
+footer .footer-link-group .about-us .footer-link {
+  font-family: "Karla 700";
+  font-size: 1rem;
+  width: max-content;
+  margin: 1.3em auto 0 auto;
+}
+footer .footer-link-group .about-us .footer-link:hover {
+  text-decoration: underline;
+}
+
+.attribution {
+  font-size: 0.8rem;
+  font-family: "Karla 400";
+  padding: 0 0 1.5em 0;
+  background-color: #fafafa;
+}
+.attribution a {
+  display: inline-block;
+}
+
+@media screen and (min-width: 740px) {
+  :root {
+    font-size: max(15px, 1.2vw);
+  }
+
+  h1, h3, h4, .text, main-heading, .footer-link {
+    text-align: left;
+  }
+
+  .insure-main-section nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 min(8rem, 12vw);
+  }
+  .insure-main-section nav .nav-top {
+    padding: 1.5em 0;
+  }
+  .insure-main-section nav .nav-top .nav-hamburger {
+    display: none;
+  }
+  .insure-main-section nav .nav-items {
+    position: relative;
+    font-size: 0.85rem;
+    width: min(60%, 25rem);
+    left: 0%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    background-image: none;
+    transform: translateX(0%);
+  }
+  .insure-main-section nav .nav-items .nav-link {
+    width: max-content;
+    padding: 0.5em 0.7em;
+    margin: 0;
+    color: #837d87;
+  }
+  .insure-main-section nav .nav-items .nav-link:hover {
+    color: #2b272f;
+    border: none;
+  }
+  .insure-main-section nav .nav-items .nav-link:last-child {
+    padding: 0.5em 1.2em;
+    color: #2d2640;
+    border: 0.15em solid #2d2640;
+  }
+  .insure-main-section nav .nav-items .nav-link:last-child:hover {
+    background-color: #2d2640;
+    color: #fafafa;
+  }
+
+  .insure-main-section header {
+    position: relative;
+  }
+  .insure-main-section header hr {
+    position: absolute;
+    display: block;
+    width: 20%;
+    top: 17%;
+    background-color: #fafafa;
+  }
+  .insure-main-section header .intro-mobile-img {
+    position: absolute;
+    width: 37vw;
+    height: 97%;
+    top: 17%;
+    right: 8%;
+  }
+  .insure-main-section header .summary {
+    display: block;
+    padding: calc(min(8rem, 12vw) * 1.3) min(8rem, 12vw) calc(min(8rem, 12vw) / 1.5) min(8rem, 12vw);
+    background-image: url(../images/bg-pattern-intro-right-desktop.svg);
+    background-position: right top;
+    background-size: 40%;
+  }
+  .insure-main-section header .summary h1, .insure-main-section header .summary p {
+    width: 53%;
+  }
+  .insure-main-section header .summary button {
+    margin: 2rem 0;
+  }
+  .insure-main-section header .bg-pattern-intro-right {
+    top: 80%;
+    left: 0%;
+    width: 25%;
+    height: 55%;
+    background-image: url(../images/bg-pattern-intro-left-desktop.svg);
+    background-position: left top;
+    background-size: contain;
+  }
+
+  .insure-main-section .more-info {
+    padding: 2em min(8rem, 12vw);
+  }
+  .insure-main-section .more-info hr {
+    margin: 0;
+    width: 16%;
+  }
+  .insure-main-section .more-info h1 {
+    margin: calc(min(8rem, 12vw) / 2) 0 calc(min(8rem, 12vw) / 1.5) 0;
+  }
+  .insure-main-section .more-info .more-info-wrapper {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  .insure-main-section .more-info .more-info-wrapper .info {
+    width: 45%;
+    margin-top: 0;
+  }
+  .insure-main-section .more-info .more-info-wrapper .info img {
+    margin: 0;
+  }
+
+  aside {
+    margin: 8rem min(8rem, 12vw);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../images/bg-pattern-how-we-work-desktop.svg);
+  }
+  aside h1 {
+    width: 55%;
+  }
+  aside button {
+    margin: 0;
+  }
+
+  footer {
+    padding: 0 min(8rem, 12vw);
+    background-image: url(../images/bg-pattern-footer-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+  footer .social-icons {
+    padding: calc(min(8rem, 12vw) / 1.5) 0 calc(min(8rem, 12vw) / 2) 0;
+    background-image: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .social-icons > img {
+    margin: 0;
+  }
+  footer .social-icons .social-icons-group {
+    margin: 0;
+    width: 15rem;
+  }
+  footer .social-icons .social-icons-group .footer-img:last-child {
+    margin-right: 0;
+  }
+  footer hr {
+    width: 100%;
+  }
+  footer .footer-link-group {
+    display: flex;
+    gap: max(7rem, 15vw);
+  }
+  footer .footer-link-group .about-us .footer-link, footer .footer-link-group .about-us h4 {
+    text-align: left;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 250px) {
+  *, h1 {
+    word-break: break-all;
+  }
+}

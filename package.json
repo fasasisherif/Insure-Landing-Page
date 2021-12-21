@@ -1,0 +1,14 @@
+{
+  "name": "insure-landing-page",
+  "version": "1.0.0",
+  "description": "insure-page-with-sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sass"
+  ],
+  "author": "Fasasi Sherif",
+  "license": "ISC"
+}
