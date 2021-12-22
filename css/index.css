@@ -322,6 +322,7 @@ footer .footer-link-group .about-us .footer-link:hover {
     padding: 0.5em 0.7em;
     margin: 0;
     color: #837d87;
+    border: none;
   }
   .insure-main-section nav .nav-items .nav-link:hover {
     color: #2b272f;
